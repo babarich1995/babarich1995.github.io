@@ -1,0 +1,14 @@
+<div class="titles">
+    <h1>upcoming</h1>
+    <h2>movies</h2>
+  </div>
+<div class="movie-container" *ngIf="!loader">
+
+<div class="movie" *ngFor="let movie of Upcome | slice:0:6" >
+<img class="image" src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{movie?.poster_path}} " [alt]="movie.title ? movie.title : movie.name ">
+ 
+  
+</div>
+
+
+</div>
